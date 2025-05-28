@@ -8,6 +8,7 @@ type SwitchProps = {
 const Switch: FC<SwitchProps> = ({ checked, onChange }) => {
   return (
     <button
+      type="button"
       onClick={() => onChange(!checked)}
       className={`w-14 h-8 rounded-full p-1 transition-colors duration-200 border-2 border-gray-500 ${
         checked ? "bg-[#0a0e1a]" : "bg-gray-700"
